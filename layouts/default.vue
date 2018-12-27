@@ -1,10 +1,20 @@
 <template>
   <div>
-    <header>jzmstrjp Portfolio Website</header>
+    <header>
+      <div class="inner">
+        <div class="site_name">jzmstrjp Portfolio Website</div>
+      </div>
+    </header>
     <main>
-    <nuxt/>
+      <div class="inner">
+        <nuxt/>
+      </div>
     </main>
-    <footer>&copy;&nbsp;2019&nbsp;jzmstrjp</footer>
+    <footer>
+      <div class="inner">
+        <small>&copy;&nbsp;2019&nbsp;jzmstrjp</small>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -24,6 +34,19 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.inner {
+  width: 1200px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
 }
 
 .page-enter-active, .page-leave-active {
