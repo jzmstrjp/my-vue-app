@@ -10,8 +10,9 @@
       </div>
     </figure>
    
-
-    <router-link to="/">トップページへ戻る</router-link>    
+    <div class="back_to_top">
+      <router-link to="/">戻る</router-link>
+    </div>    
   </div>
 </template>
 

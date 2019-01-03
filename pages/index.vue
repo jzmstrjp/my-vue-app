@@ -13,7 +13,6 @@
         </router-link>
       </li>
     </ul>
-    <router-link to="/about">トップページへ戻る</router-link>
   </div>
   
 </template>
