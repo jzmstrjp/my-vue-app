@@ -26,7 +26,6 @@
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Concert+One');
 html {
   font-family: 'Concert One', "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 10px;

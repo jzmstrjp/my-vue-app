@@ -16,7 +16,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'my portfolio' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Concert+One' }
     ]
   },
   /*
