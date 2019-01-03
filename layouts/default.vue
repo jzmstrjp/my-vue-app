@@ -42,6 +42,10 @@ body {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 .inner {
   width: 1200px;
   max-width: 90%;

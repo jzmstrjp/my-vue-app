@@ -1,9 +1,17 @@
 <template>
   <div>
     <h1 class="title">My Blog App</h1>
-    <ul>
-        <li v-for="post in posts" :key="post.id">
-          {{post.title}}
+    <ul class="posts">
+        <li v-for="(post,key) in posts" :key="key">
+          <figure class="single_post">
+            <figcaption class="single_post__fig_caption">
+              <p class="single_post__title">{{post.title}}</p>
+              <p class="single_post__body">{{post.body}}</p>
+            </figcaption>
+            <div class="single_post__img">
+              <img src="~/assets/images/color-the-tag-name.png">
+            </div>
+          </figure>
         </li>
     </ul>
     <router-link to="/about">トップページへ戻る</router-link>
@@ -12,23 +20,18 @@
 </template>
 
 <script>
+import Posts from '~/components/posts.vue'
 export default {
   data(){
     return {
       posts: [
         {
-          "id": 1,
-          "title": "最初の記事です。"
+          "title": "タグに色つけ太郎",
+          "body": "最初の記事です。",
+          "genre": "プラグイン",
+          "img": "color-the-tag-name.png",
         },
-        {
-          "id": 2,
-          "title": "2番目の投稿です。",
-        },
-        {
-          "id": 3,
-          "title": "３番めの投稿です。",
-        },
-      ]      
+      ],
     }
   }  
 }
