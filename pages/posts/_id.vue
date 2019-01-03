@@ -11,7 +11,7 @@
     </figure>
    
     <div class="back_to_top">
-      <router-link to="/">戻る</router-link>
+      <router-link to="/">Back</router-link>
     </div>    
   </div>
 </template>

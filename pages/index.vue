@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="title">My Blog App</h1>
+    <h1 class="title">My Products</h1>
     <ul class="posts_list">
       <li v-for="(post,key) in posts" :key="key">
         <router-link :to="{ name: 'posts-id', params: { id: key }}">

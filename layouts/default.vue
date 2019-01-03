@@ -2,7 +2,10 @@
   <div>
     <header>
       <div class="inner">
-        <div class="site_name">jzmstrjp Portfolio Website</div>
+        <div class="site_name">
+          <span class="ib">Takashi Tokumoto</span>
+          <span class="ib">Portfolio Website</span>
+        </div>
       </div>
     </header>
     <main>
@@ -21,8 +24,9 @@
 </template>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Concert One', "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 10px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -34,9 +38,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  p {
-    color: #d00;
-  }
 }
 
 *, *:before, *:after {
@@ -49,6 +50,11 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .inner {
   width: 1200px;
   max-width: 90%;
@@ -58,20 +64,56 @@ img {
 
 header, footer {
   text-align: center;
-  background-color: #000;
-  color: #fff;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+.site_name {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.back_to_top {
+  text-align: center;
+  margin-top: 3rem;
+  a{
+    border: 2px solid;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+  }
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.single_post_fig__img {
+  margin-top: 2rem;
 }
 
 .copyright {
-  padding: 1em;
+  padding: 0.7em 0 0.8em;
 }
 
 .page-enter-active, .page-leave-active {
-  transition: opacity .3s;
+  transition: .5s;
 }
 .page-enter, .page-leave-to {
   opacity: 0;
 }
-
+.page-enter {
+  transform: translateX(100%);
+}
+.page-leave-to {
+  transform: translateX(-100%);
+}
 </style>
 
