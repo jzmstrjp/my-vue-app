@@ -35,7 +35,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-image: linear-gradient(#ffdcc5, #ff9d64);
+  background-image: linear-gradient(#ffdcc5, #ffa571);
   min-height: 100%;
 }
 
@@ -45,6 +45,12 @@ body {
 
 main {
   min-height: 50vh;
+}
+
+.single_post__body {
+  white-space:pre-wrap;
+  word-wrap:break-word;
+
 }
 
 *, *:before, *:after {
@@ -91,7 +97,6 @@ footer {
   margin-top: 3rem;
   a{
     background-color: rgba(255,255,255,0.5);
-    font-weight: bold;
     display: inline-block;
     padding: 0.5em 1em;
     border-radius: 0.5em;
@@ -101,10 +106,23 @@ footer {
 .title {
   margin-bottom: 2rem;
   font-size: 2.4rem;
+  padding-bottom: 0.7rem;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(to right, #ff9254, rgba(255, 255, 255, 0));
+  }
 }
 
 .single_post_fig__img {
   margin-top: 2rem;
+  text-align: center;
 }
 
 .copyright {
@@ -115,8 +133,10 @@ footer {
   li {
     margin-bottom: 2%;
     list-style-type: none;
+    display: flex;
   }
   a {
+    width: 100%;
     text-align: center;
     font-weight: bold;
     background-color: rgba(255,255,255,0.5);
