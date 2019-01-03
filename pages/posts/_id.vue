@@ -1,7 +1,6 @@
 <template>
   <div class="single_post_page">
     <h1 class="title">{{post.title}}</h1>
-    <h2>{{ $route.params.id }}</h2>
     <figure class="single_post_fig">
       <figcaption class="single_post_fig__caption">
           <p class="single_post__body">{{post.body}}</p>
