@@ -36,7 +36,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-image: linear-gradient(#000, #fff);
+  background-image: linear-gradient(rgb(255, 220, 197), #fff);
   min-height: 100%;
 }
 
@@ -75,7 +75,7 @@ header, footer {
 }
 
 header {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 footer {
@@ -84,7 +84,7 @@ footer {
 
 .site_name {
   font-size: 3rem;
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 .back_to_top {
