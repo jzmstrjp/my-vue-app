@@ -3,8 +3,10 @@
     <header>
       <div class="inner">
         <div class="site_name">
-          <span class="ib">Takashi Tokumoto</span>
-          <span class="ib">Portfolio Website</span>
+          <router-link to="/">
+            <span class="ib">Takashi Tokumoto</span>
+            <span class="ib">Portfolio Website</span>
+          </router-link>
         </div>
       </div>
     </header>
@@ -34,10 +36,16 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background-image: linear-gradient(#000, #fff);
+  min-height: 100%;
 }
 
 body {
   font-size: 1.6rem;
+}
+
+main {
+  min-height: 50vh;
 }
 
 *, *:before, *:after {
@@ -56,7 +64,7 @@ a {
 }
 
 .inner {
-  width: 1200px;
+  width: 1000px;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -93,6 +101,7 @@ footer {
 
 .title {
   margin-bottom: 2rem;
+  font-size: 2.4rem;
 }
 
 .single_post_fig__img {
@@ -101,6 +110,32 @@ footer {
 
 .copyright {
   padding: 0.7em 0 0.8em;
+}
+
+.posts_list {
+  li {
+    margin-bottom: 2%;
+    list-style-type: none;
+  }
+  a {
+    text-align: center;
+    font-weight: bold;
+    border: 2px dotted;
+    border-radius: 0.5em;
+    display: block;
+    padding: 1rem;
+  }
+  @media (min-width: 641px) {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 32%;
+      margin-right: 2%;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 .page-enter-active, .page-leave-active {

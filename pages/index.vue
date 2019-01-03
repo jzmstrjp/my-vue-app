@@ -7,7 +7,6 @@
           <figure class="single_post_fig">
             <figcaption class="single_post_fig__caption">
               <p class="single_post__title">{{post.title}}</p>
-              <p class="single_post__body">{{post.body}}</p>
             </figcaption>
           </figure>
         </router-link>
