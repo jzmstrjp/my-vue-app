@@ -130,7 +130,7 @@ footer {
 
 .single_post_fig__img {
   margin-top: 2rem;
-  text-align: center;
+  // text-align: center;
 }
 
 .copyright {
@@ -166,7 +166,7 @@ footer {
 }
 
 .page-enter-active, .page-leave-active {
-  transition: .5s;
+  transition: .3s;
 }
 .page-enter, .page-leave-to {
   opacity: 0;
