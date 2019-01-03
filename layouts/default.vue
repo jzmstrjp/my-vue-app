@@ -35,7 +35,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-image: linear-gradient(rgb(255, 220, 197), #fff);
+  background-image: linear-gradient(#ffdcc5, #ff9d64);
   min-height: 100%;
 }
 
@@ -90,7 +90,7 @@ footer {
   text-align: center;
   margin-top: 3rem;
   a{
-    border: 2px solid;
+    background-color: rgba(255,255,255,0.5);
     font-weight: bold;
     display: inline-block;
     padding: 0.5em 1em;
@@ -119,7 +119,7 @@ footer {
   a {
     text-align: center;
     font-weight: bold;
-    border: 2px dotted;
+    background-color: rgba(255,255,255,0.5);
     border-radius: 0.5em;
     display: block;
     padding: 1rem;
