@@ -1,4 +1,10 @@
 module.exports = {
+  generate: {
+    routes: [
+      '/posts/0',
+      '/posts/1',
+    ]
+  },
   /*
   ** Headers of the page
   */
