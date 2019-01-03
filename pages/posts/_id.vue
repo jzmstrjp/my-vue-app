@@ -3,13 +3,15 @@
     <h1 class="title">{{post.title}}</h1>
     <figure class="single_post_fig">
       <figcaption class="single_post_fig__caption">
-          <p class="single_post__body">{{post.body}}</p>
+        <p class="single_post__body">{{post.body}}</p>
+        <div class="single_post_link">
+          <a href="{{post.url}}">{{post.link_text}}</a>
+        </div>
       </figcaption>
       <div v-if="post.img" class="single_post_fig__img">
-          <img v-bind:src="require('~/assets/images/' + post.img)">
+        <img v-bind:src="require('~/assets/images/' + post.img)">
       </div>
     </figure>
-   
     <div class="back_to_top">
       <router-link to="/">Back</router-link>
     </div>    

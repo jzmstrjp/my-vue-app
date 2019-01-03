@@ -92,15 +92,23 @@ footer {
   padding: 1.2rem;
 }
 
+.single_post_link,
 .back_to_top {
-  text-align: center;
-  margin-top: 3rem;
   a{
     background-color: rgba(255,255,255,0.5);
     display: inline-block;
     padding: 0.5em 1em;
     border-radius: 0.5em;
   }
+}
+
+.single_post_link {
+  margin-top: 1rem;
+}
+
+.back_to_top {
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .title {
