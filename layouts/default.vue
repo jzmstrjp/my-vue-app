@@ -20,7 +20,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 10px;
@@ -34,6 +34,9 @@ html {
 
 body {
   font-size: 1.6rem;
+  p {
+    color: #d00;
+  }
 }
 
 *, *:before, *:after {
