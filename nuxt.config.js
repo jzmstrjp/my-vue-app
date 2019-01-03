@@ -3,6 +3,10 @@ module.exports = {
     routes: [
       '/posts/0',
       '/posts/1',
+      '/posts/2',
+      '/posts/3',
+      '/posts/4',
+      '/posts/5',
     ]
   },
   /*

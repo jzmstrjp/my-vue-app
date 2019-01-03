@@ -4,7 +4,7 @@
       <div class="inner">
         <div class="site_name">
           <router-link to="/">
-            <span class="ib">Takashi Tokumoto</span>
+            <span class="ib">jzmstrjp</span>
             <span class="ib">Portfolio Website</span>
           </router-link>
         </div>
@@ -103,7 +103,7 @@ footer {
 }
 
 .single_post_link {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .back_to_top {
