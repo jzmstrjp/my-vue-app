@@ -165,16 +165,18 @@ footer {
   }
 }
 
-.page-enter-active, .page-leave-active {
+.page-enter-active, .page-leave-active,
+.reverse-enter-active, .reverse-leave-active {
   transition: .3s;
 }
-.page-enter, .page-leave-to {
+.page-enter, .page-leave-to,
+.reverse-enter, .reverse-leave-to {
   opacity: 0;
 }
-.page-enter {
+.page-enter, .reverse-leave-to {
   transform: translateX(100%);
 }
-.page-leave-to {
+.page-leave-to, .reverse-enter {
   transform: translateX(-100%);
 }
 </style>
