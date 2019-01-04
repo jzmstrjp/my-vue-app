@@ -174,10 +174,10 @@ footer {
   opacity: 0;
 }
 .page-enter, .reverse-leave-to {
-  transform: translateX(100%);
+  transform: scale(0.5);
 }
 .page-leave-to, .reverse-enter {
-  transform: translateX(-100%);
+  transform: scale(2);
 }
 </style>
 
