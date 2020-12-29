@@ -5,7 +5,8 @@
       <figcaption class="single_post_fig__caption">
         <p class="single_post__body">{{post.body}}</p>
         <div class="single_post_link">
-          <a v-bind:href="post.url" target="_blank">{{post.link_text}}を見る</a>
+          <a v-if="post.url" v-bind:href="post.url" target="_blank">{{post.link_text}}を見る</a>
+          <a v-else>サービス終了しました</a>
         </div>
       </figcaption>
       <div v-if="post.img" class="single_post_fig__img">
