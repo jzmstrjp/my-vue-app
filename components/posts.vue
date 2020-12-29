@@ -18,7 +18,6 @@ export default [
       "title": "なもなきくらすた",
       "body": "2つのキーワードを元に任意のクラスタを作成し、Twitterで仲間を集うWebサービスです。\nRuby on Railsで開発し、Herokuサーバで運営しています。",
       "img": "namonaki.jpg",
-      "url": "https://namonaki-cluster.herokuapp.com/",
       "link_text": "Webサイト",
     },
     {
